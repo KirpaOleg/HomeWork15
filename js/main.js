@@ -1,10 +1,15 @@
 
+let simpleNumBool;
+for ( let i = 1; i < 10000; i++ ) {
+	simpleNumBool = true;
 
-let output = ""; 
-for (let i = 2; i <= 14; i = i + 2) {
-    output += i + " "; 
+	for ( let divi = 2; divi < i; divi++ ) {
+		if ( i % divi == 0) {
+			simpleNumBool = false;
+		};
+	};
+
+	if ((i + 1) % 8 == 0) { 
+			 console.log(i)
+		  	} 
 }
-for (let i = 33; i <= 45; i = i + 2) {
-    output += i + " "; 
-}
-console.log(output);
